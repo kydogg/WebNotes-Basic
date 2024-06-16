@@ -1,0 +1,87 @@
+/* Color palette:
+   - OFA3B1 (Moonstone)
+   - B532FA (Uranian Blue)
+   - F9F7F3 (Baby Powder)
+   - EDDEA4 (Vanilla)
+   - F7A072 (Atomic Tangerine)
+   */
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Poppins", sans-serif;
+	box-sizing: border-box;
+}
+
+/* Container styles */
+.container {
+	width: 100%;
+	min-height: 100vh;
+	background: linear-gradient(135deg, #0fa3b1, #b532fa);
+	color: #f9f7f3; /* Baby Powder */
+	padding-top: 4%;
+	padding-left: 4%;
+}
+
+.container h1 {
+	display: flex;
+	align-items: center;
+	font-size: 35px;
+	font-weight: 600;
+}
+
+.container h1 img {
+	width: 60px;
+}
+
+.container button img {
+	width: 25px;
+	margin-right: 8px;
+}
+
+.container button {
+	display: flex;
+	align-items: center;
+	background: linear-gradient(
+		135deg,
+		#eddea4,
+		#f7a072
+	); /* Vanilla to Atomic Tangerine */
+	color: #333; /* Dark text for better contrast */
+	border: 0;
+	border-radius: 40px;
+	padding: 15px 25px;
+	margin: 30px 0 20px;
+	cursor: pointer;
+}
+
+.notes-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 20px; /* Space between notes */
+	padding: 20px;
+}
+
+.input-box {
+	position: relative;
+	background: #f9f7f3;
+	color: #333;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	width: 100%;
+	max-width: 400px; /* Adjust to fit within grid */
+	min-height: 150px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 0; /* Remove default margins */
+}
+
+.input-box img {
+	width: 25px;
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+	cursor: pointer;
+}
